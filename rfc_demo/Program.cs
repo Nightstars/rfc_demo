@@ -9,7 +9,7 @@ star and fork will be better
 chrsitzhangowner@gmail.com
 ----------------------------------------------------------------------------- */
 
-/******************* rfc .net core support ********************
+/************************ rfc .net core support *************************
    Author(s):   christ chang
    Description: rfc .net core support
    github: https://github.com/Nightstars/rfc_demo
@@ -25,6 +25,12 @@ namespace rfc_demo
         {
             try
             {
+                Console.WriteLine("/************************ rfc .net core support *************************");
+                Console.WriteLine("   Author(s):   christ chang");
+                Console.WriteLine("   Description: rfc .net core support");
+                Console.WriteLine("   github: https://github.com/Nightstars/rfc_demo");
+                Console.WriteLine("   thanks: huysentruitw and his work ");
+                Console.WriteLine("************************************************************************/");
                 //define connect string 
                 string connectionString = "AppServerHost=192.168.95.20; SystemNumber=00; User=ZBT_RFC; Password=Zbt_rfc123; Client=310; Language=ZH; PoolSize=5; Trace=8;";
                 //structure rfc connection
@@ -55,7 +61,7 @@ namespace rfc_demo
                 Console.ReadKey();
             }catch(Exception e)
             {
-                Console.WriteLine(e.Message);
+                Console.WriteLine("Oh no: "+e.Message);
                 Console.ReadKey();
             }
         }
