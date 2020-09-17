@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SapNwRfc;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -6,11 +7,17 @@ namespace rfc_demo
 {
     class ZMDGS003
     {
-        public string MDATA { get; set; }
-        public string MEINST { get; set; }
-        public string GROES { get; set; }
-        public string ZSPM { get; set; }
-        public string MAKTX { get; set; }
-        public string BUKRS { get; set; }
+        [SapName("MDATA")]
+        public string Mdata { get; set; }
+        [SapName("MEINST")]
+        public string Meinst { get; set; }
+        [SapName("GROES")]
+        public string Groes { get; set; }
+        [SapName("ZSPM")]
+        public string Zspm { get; set; }
+        [SapName("MAKTX")]
+        public string Maktx { get; set; }
+        [SapName("BUKRS")]
+        public string Bukrs { get; set; }
     }
 }
