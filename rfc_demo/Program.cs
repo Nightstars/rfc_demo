@@ -8,7 +8,7 @@ namespace rfc_demo
         {
             try
             {
-                string connectionString = "AppServerHost=192.168.95.20; SystemNumber=00; User=ZBT_RFC; Password=Zbt_rfc123; Client=310; Language=ZH; PoolSize=5; Trace=8";
+                string connectionString = "AppServerHost=xx; SystemNumber=xx; User=xx; Password=xx; Client=xx; Language=ZH; PoolSize=5; Trace=8";
                 using var connection = new SapConnection(connectionString);
                 connection.Connect();
                 using var someFunction = connection.CreateFunction("ZMDG_MDATA_INFO");
